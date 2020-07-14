@@ -1,0 +1,29 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-03 20:02:36
+ * @LastEditTime: 2020-07-07 09:15:40
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \gzdt3_ms\src\WebApps\Apps_vue\Example\pages\module\MyDiv.html
+-->
+
+<style>
+    .my_tree {
+        color: red;
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <bstar-myTree>
+        这是一个我自己定义的标签
+    </bstar-myTree>
+</body>
+
+<script>
+    window.onload = function () {
+        var myTree = document.getElementsByTagName("bstar-myTree");
+        myTree[0].className = "my_tree";
+        console.log(myTree);
+    }
+</script>
